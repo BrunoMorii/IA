@@ -37,6 +37,7 @@ vetorCentroids = []
 for i in range(0, int(nCluster)):
     vetorCentroids.append([ random.randint(int(menorValor),int(maiorValor)), random.randint(int(menorValor),int(maiorValor))])
     #vetorCentroids.append([ 5, 5]) #centroids inicias fixos
+
 #roda k media nInt vezes
 for i in range(0, int(nInt)):
     #inicializa clusters
@@ -78,6 +79,7 @@ for i in range(0, int(nInt)):
             somaY += float(k[2])
             divisor += 1
 
+        #evitar divisao por 0 com cluster vazio
         if(divisor != 0):
             vetorCentroids[j][0] = somaX / divisor
             vetorCentroids[j][1] = somaY / divisor
