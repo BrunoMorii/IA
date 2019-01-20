@@ -1,14 +1,13 @@
 import math
 import random
-import pprint
 
 #inciando leitura de dados
 dados = [] #dsera matriz contendo informacao da leitura
 
 # Os três arquivos estão aqui, basta escolher qual
 #leitura = "datasets\c2ds1-2sp.txt"
-#leitura = "datasets\c2ds3-2g.txt"
-leitura = "datasets\monkey.txt"
+leitura = "datasets\c2ds3-2g.txt"
+#leitura = "datasets\monkey.txt"
 
 a = open(leitura, "r");
 
@@ -114,7 +113,9 @@ for j in range(0, int(nCluster)):
 """
 
 #iniciando processo de escrita
-escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeyKMedia.clu' #coloca na pasta de acordo com nCluster
+#escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spKmedia.clu' #coloca na pasta de acordo com nCluster
+escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gKMedia.clu' #coloca na pasta de acordo com nCluster
+#escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeyKMedia.clu' #coloca na pasta de acordo com nCluster
 
 #para cada dado busca qual cluster esta e escreve
 a = open(escrita, "w")
