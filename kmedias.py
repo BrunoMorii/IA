@@ -1,5 +1,6 @@
 import math
 import random
+import pprint
 
 #inciando leitura de dados
 dados = [] #dsera matriz contendo informacao da leitura
@@ -24,8 +25,8 @@ f.close()
 
 
 #iniciando recebimento de informações
-nCluster = input("Digite o número desejado de clusters: ")
-nInt = input("Digite o número desejado de iterações: ")
+nCluster = int(input("Digite o número desejado de clusters: "))
+nInt = int(input("Digite o número desejado de iterações: "))
 
 #vetores para armazenar clusters e centroids
 vetorCluster = []
@@ -34,7 +35,7 @@ vetorCentroids = []
 #inicializar clusters aleatorios
 #entre menor e maior valor nos dados
 for i in range(0, int(nCluster)):
-    vetorCentroids.append([ random.randint(menorValor,maiorValor), random.randint(menorValor,maiorValor)])
+    vetorCentroids.append([ random.randint(int(menorValor),int(maiorValor)), random.randint(int(menorValor),int(maiorValor))])
 
 #roda k media nInt vezes
 for i in range(0, int(nInt)):
@@ -45,7 +46,44 @@ for i in range(0, int(nInt)):
 
     #verifica distancias
     for j in dados:
+        #incializa comparadores
         distInd = -1
         distVal = 0
-        for k in vetorCluster:
-            dist = math.sqrt()
+
+        #para cada centroid, verifica o melhor
+        for k in vetorCentroids:
+            dist = float( math.sqrt(pow( (j[1] - k[0]) , 2) + pow( (j[2] - k[1]) , 2) ) )
+            if distInd == -1:
+                distVal = dist
+                distInd = vetorCentroids.index(k)
+            else:
+                if distVal > dist:
+                    distVal = dist
+                    distInd = vetorCentroids.index(k)
+
+        #insere no cluster de menor distancia
+        vetorCluster[distInd].append(j)
+
+    #calcula centroids novos
+    vetorCentroids.clear()
+    for j in range(0, int(nCluster)):
+        vetorCentroids.append([ 0.0,0.0])
+
+    for j in range(0, int(nCluster)):
+        somaX = 0.0
+        somaY = 0.0
+
+        for k in vetorCluster[j]:
+            somaX += float(k[1])
+            somaY += float(k[2])
+
+        vetorCentroids[j][0] = somaX / len(vetorCentroids[j])
+        vetorCentroids[j][1] = somaY / len(vetorCentroids[j])
+
+    print("----------------")
+    print("Clusters:")
+    pprint.pprint(vetorCentroids)
+
+print("----------------")
+print("Clusters Finais:")
+pprint.pprint(vetorCentroids)
