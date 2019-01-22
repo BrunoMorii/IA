@@ -1,13 +1,17 @@
 import math
 import random
 
+#for rodar in range(2,6):
+#for rodar in range(5,13):
+
 #inciando leitura de dados
 dados = [] #dsera matriz contendo informacao da leitura
+dados.clear();
 
 # Os três arquivos estão aqui, basta escolher qual
 #leitura = "datasets\c2ds1-2sp.txt"
-leitura = "datasets\c2ds3-2g.txt"
-#leitura = "datasets\monkey.txt"
+#leitura = "datasets\c2ds3-2g.txt"
+leitura = "datasets\monkey.txt"
 
 a = open(leitura, "r");
 
@@ -25,7 +29,11 @@ a.close()
 
 #iniciando recebimento de informações
 nCluster = int(input("Digite o número desejado de clusters: "))
+#nCluster = int(rodar)
+#print("Iniciando algoritmo com " + str(nCluster) + " clusters...")
+
 nInt = int(input("Digite o número desejado de iterações: "))
+#nInt = 1000
 
 #vetores para armazenar clusters e centroids
 vetorCluster = []
@@ -114,8 +122,8 @@ for j in range(0, int(nCluster)):
 
 #iniciando processo de escrita
 #escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spKmedia.clu' #coloca na pasta de acordo com nCluster
-escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gKMedia.clu' #coloca na pasta de acordo com nCluster
-#escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeyKMedia.clu' #coloca na pasta de acordo com nCluster
+#escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gKMedia.clu' #coloca na pasta de acordo com nCluster
+escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeyKMedia.clu' #coloca na pasta de acordo com nCluster
 
 #para cada dado busca qual cluster esta e escreve
 a = open(escrita, "w")
@@ -126,3 +134,4 @@ for i in dados:
             break
 
 a.close()
+#print("Finalizando algoritmo com " + str(nCluster) + " clusters...")
