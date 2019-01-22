@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87ff6c8-5bbe-4b3e-93b1-df0722ae68d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rand" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/averagelink.py" beforeDir="false" afterPath="$PROJECT_DIR$/averagelink.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kmedias.py" beforeDir="false" afterPath="$PROJECT_DIR$/kmedias.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singlelink.py" beforeDir="false" afterPath="$PROJECT_DIR$/singlelink.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kmedias.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
+            <state relative-caret-position="2312">
               <caret line="136" column="69" selection-start-line="136" selection-start-column="69" selection-end-line="136" selection-end-column="69" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singlelink.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="72" />
+            <state relative-caret-position="-2">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/averagelink.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="272">
+              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,9 +68,9 @@
       <list>
         <option value="$USER_HOME$/Downloads/IA/k-mean.py" />
         <option value="$USER_HOME$/Downloads/IA/adjusted_rand_index.py" />
+        <option value="$PROJECT_DIR$/kmedias.py" />
         <option value="$PROJECT_DIR$/singlelink.py" />
         <option value="$PROJECT_DIR$/averagelink.py" />
-        <option value="$PROJECT_DIR$/kmedias.py" />
       </list>
     </option>
   </component>
@@ -115,20 +114,27 @@
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA" type="462c0819:PsiDirectoryNode" />
               <item name="resultados" type="462c0819:PsiDirectoryNode" />
-              <item name="c2ds1-2sp" type="462c0819:PsiDirectoryNode" />
-              <item name="k2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IA" type="462c0819:PsiDirectoryNode" />
-              <item name="resultados" type="462c0819:PsiDirectoryNode" />
               <item name="c2ds3-2g" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA" type="462c0819:PsiDirectoryNode" />
               <item name="resultados" type="462c0819:PsiDirectoryNode" />
+              <item name="c2ds3-2g" type="462c0819:PsiDirectoryNode" />
+              <item name="k5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IA" type="462c0819:PsiDirectoryNode" />
+              <item name="resultados" type="462c0819:PsiDirectoryNode" />
               <item name="monkey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IA" type="462c0819:PsiDirectoryNode" />
+              <item name="resultados" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="k5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.singlelink">
+  <component name="RunManager" selected="Python.averagelink">
     <configuration name="averagelink" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,8 +245,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.singlelink" />
         <item itemvalue="Python.averagelink" />
+        <item itemvalue="Python.singlelink" />
         <item itemvalue="Python.kmedias" />
         <item itemvalue="Python.k-mean" />
       </list>
@@ -319,10 +325,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/averagelink.py">
+    <entry file="file://$PROJECT_DIR$/kmedias.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="2312">
+          <caret line="136" column="69" selection-start-line="136" selection-start-column="69" selection-end-line="136" selection-end-column="69" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -331,18 +337,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/singlelink.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="72" />
+        <state relative-caret-position="-2">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kmedias.py">
+    <entry file="file://$PROJECT_DIR$/averagelink.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="136" column="69" selection-start-line="136" selection-start-column="69" selection-end-line="136" selection-end-column="69" />
+        <state relative-caret-position="272">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

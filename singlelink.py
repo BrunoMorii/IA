@@ -8,8 +8,8 @@ for rodar in range(2,6):
     dados.clear()
 
     # Os tres arquivos estao aqui, basta escolher qual
-    leitura = "datasets\c2ds1-2sp.txt"
-    #leitura = "datasets\c2ds3-2g.txt"
+    #leitura = "datasets\c2ds1-2sp.txt"
+    leitura = "datasets\c2ds3-2g.txt"
     #leitura = "datasets\monkey.txt"
 
     a = open(leitura, "r");
@@ -77,8 +77,8 @@ for rodar in range(2,6):
     """
 
     #iniciando processo de escrita
-    escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spSingleLink.clu' #coloca na pasta de acordo com nCluster
-    #escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gSingleLink.clu' #coloca na pasta de acordo com nCluster
+    #escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spSingleLink.clu' #coloca na pasta de acordo com nCluster
+    escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gSingleLink.clu' #coloca na pasta de acordo com nCluster
     #escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeySingleLink.clu' #coloca na pasta de acordo com nCluster
 
     #para cada dado busca qual cluster esta e escreve
