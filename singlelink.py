@@ -52,6 +52,8 @@ for rodar in range(5,13):
             for j in vetorCluster[cluster2]:
                 vetorCluster[cluster1].append(j)
             vetorCluster.pop(cluster2)
+            print(vetorCluster)
+            print("----------")
         except:
             print (len(vetorCluster))
             print (cluster2)
@@ -77,9 +79,9 @@ for rodar in range(5,13):
     """
 
     #iniciando processo de escrita
-    #escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spSingleLink.clu' #coloca na pasta de acordo com nCluster
+    escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spSingleLink.clu' #coloca na pasta de acordo com nCluster
     #escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gSingleLink.clu' #coloca na pasta de acordo com nCluster
-    escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeySingleLink.clu' #coloca na pasta de acordo com nCluster
+    #escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeySingleLink.clu' #coloca na pasta de acordo com nCluster
 
     #para cada dado busca qual cluster esta e escreve
     a = open(escrita, "w")
