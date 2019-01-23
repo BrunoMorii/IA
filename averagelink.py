@@ -1,8 +1,8 @@
 import math
 import random
 
-for rodar in range(2,6):
-#for rodar in range(5,13):
+#for rodar in range(2,6):
+for rodar in range(5,13):
     #inciando leitura de dados
     dados = [] #dsera matriz contendo informacao da leitura
     dados.clear()
@@ -82,8 +82,8 @@ for rodar in range(2,6):
 
     #iniciando processo de escrita
     #escrita = 'resultados\c2ds1-2sp\k' + str(nCluster) + '\c2ds1-2spAverageLink.clu' #coloca na pasta de acordo com nCluster
-    escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gAverageLink.clu' #coloca na pasta de acordo com nCluster
-    #escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeyAverageLink.clu' #coloca na pasta de acordo com nCluster
+    #escrita = 'resultados\c2ds3-2g\k' + str(nCluster) + '\c2ds3-2gAverageLink.clu' #coloca na pasta de acordo com nCluster
+    escrita = 'resultados\monkey\k' + str(nCluster) + '\monkeyAverageLink.clu' #coloca na pasta de acordo com nCluster
 
     #para cada dado busca qual cluster esta e escreve
     a = open(escrita, "w")
