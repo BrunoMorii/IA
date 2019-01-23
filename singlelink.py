@@ -1,16 +1,16 @@
 import math
 import random
 
-#for rodar in range(2,6):
-for rodar in range(5,13):
+for rodar in range(5,6):
+#for rodar in range(5,13):
     #inciando leitura de dados
     dados = [] #dsera matriz contendo informacao da leitura
     dados.clear()
 
     # Os tres arquivos estao aqui, basta escolher qual
-    #leitura = "datasets\c2ds1-2sp.txt"
+    leitura = "datasets\c2ds1-2sp.txt"
     #leitura = "datasets\c2ds3-2g.txt"
-    leitura = "datasets\monkey.txt"
+    #leitura = "datasets\monkey.txt"
 
     a = open(leitura, "r");
 
