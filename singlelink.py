@@ -52,8 +52,8 @@ for rodar in range(5,6):
             for j in vetorCluster[cluster2]:
                 vetorCluster[cluster1].append(j)
             vetorCluster.pop(cluster2)
-            print(vetorCluster)
-            print("----------")
+            #print(vetorCluster)
+            #print("----------")
         except:
             print (len(vetorCluster))
             print (cluster2)
